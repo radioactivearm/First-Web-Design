@@ -9,3 +9,40 @@
 .nav {
     width: 200px;
 }
+
+#landing-pic {
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+
+#img-1 {
+    width: 200px;
+    height: 200px;
+}
+
+#img-2 {
+
+    width: 200px;
+    height: 200px;
+}
+#img-3 {
+    width: 200px;
+    height: 200px;
+}
+#img-4 {
+    width: 200px;
+    height: 200px;
+}
+
+.img-g-1 {
+    position: absolute;
+    top:10;
+    left:0;
+}
+
+.img-g-2 {
+    position: absolute;
+    top: 10;
+    left: 60%;
+}
