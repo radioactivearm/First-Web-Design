@@ -1,0 +1,11 @@
+.nav-tabs {
+    position: absolute;
+    right: 5%;
+}
+.nav li {
+    padding-left: 2.5%;
+}
+
+.nav {
+    width: 200px;
+}
