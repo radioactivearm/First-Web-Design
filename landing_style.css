@@ -1,13 +1,26 @@
-.nav-tabs {
-    position: absolute;
-    right: 5%;
-}
-.nav li {
-    padding-left: 2.5%;
+.navbar {
+    padding-bottom: 50px;
 }
 
-.nav {
-    width: 200px;
+.navbar li {
+    padding-left: 5px;
+    position: absolute;
+}
+
+#menu-4 {
+    right:0;
+}
+
+#menu-3 {
+    right: 5%;
+}
+
+#menu-2 {
+    right: 15%;
+}
+
+#menu-1 {
+    left:0;
 }
 
 #landing-pic {
