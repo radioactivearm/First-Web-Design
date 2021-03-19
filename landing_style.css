@@ -27,6 +27,7 @@
 }
 /*------------------------------*/
 
+/* landing styling */
 
 #landing-pic {
     width: 300px;
@@ -64,4 +65,13 @@
     bottom:0;
     right:0;
 }
+
+/* -------------------------- */
+
+/* plots styling */
+
+.plot img {
+    float: left;
+}
+
 
