@@ -1,27 +1,25 @@
+
+
 .navbar {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    background-color: #565051;
+    width: 100%;
 }
+
 
 .navbar li {
-    padding-left: 5px;
-    position: absolute;
+    padding-left: 10px;
+    /* position: absolute; */
 }
 
-#menu-4 {
-    right:0;
+.navbar li a {
+    color: #fff;
 }
 
-#menu-3 {
-    right: 5%;
+.dropdown-menu {
+    background-color: #565051;
 }
 
-#menu-2 {
-    right: 15%;
-}
-
-#menu-1 {
-    left:0;
-}
 
 #landing-pic {
     width: 300px;
@@ -29,33 +27,33 @@
     float: left;
 }
 
-#img-1 {
-    width: 200px;
-    height: 200px;
+.img-set {
+    position: relative;
+    width: 100%;
+    /* TA Chris helped me get this 1:1 ratio part down */
+    padding-top: 100%;
 }
 
-#img-2 {
-
-    width: 200px;
-    height: 200px;
-}
-#img-3 {
-    width: 200px;
-    height: 200px;
-}
-#img-4 {
-    width: 200px;
-    height: 200px;
-}
-
-.img-g-1 {
+.img {
     position: absolute;
-    top:10;
+    width: 50%;
+    height: 50%;
+}
+
+.img-1 {
+    top:0;
     left:0;
 }
 
-.img-g-2 {
-    position: absolute;
-    top: 10;
-    left: 60%;
+.img-2 {
+    bottom:0;
+    left:0;
+}
+.img-3 {
+    top:0;
+    right:0;
+}
+.img-4 {
+    bottom:0;
+    right:0;
 }

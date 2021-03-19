@@ -11,35 +11,36 @@
         <div class='container'>
 
             <div class="navbar">
-                <div class="navbar-inner">
-                  <a class="brand" href="#">Title</a>
+              <div class="navbar-inner">
+                <a class="brand" href="#">Title</a>
+                <ul class="nav">
+                  
                   <ul class="nav">
-                    <ul class="nav">
-                        <li id='menu-1' class="active"><a href="#">Home</a></li>
-                        <li id='menu-2' class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Plots
-                            <b class="caret"></b>
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">Latitude VS Temperature</a></li>
-                            <li><a href="#">Latitude VS Humidity</a></li>
-                            <li><a href="#">Latitude VS Cloudiness</a></li>
-                            <li><a href="#">Latitude VS Wind Speed</a></li>
-                          </ul>
-                        </li>
-                    </ul>
-                    
-                    <li id='menu-3'><a href="#">Comparison</a></li>
-                    <li id='menu-4'><a href="#">Data</a></li>
+                      <li id='menu-1' class="active"><a href="#">Home</a></li>
+                      <li id='menu-2' class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                          Plots
+                          <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">VS Temperature</a></li>
+                          <li><a href="#">VS Humidity</a></li>
+                          <li><a href="#">VS Cloudiness</a></li>
+                          <li><a href="#">VS Wind Speed</a></li>
+                        </ul>
+                      </li>
                   </ul>
-                </div>
+                  
+                  <li id='menu-3'><a href="#">Comparison</a></li>
+                  <li id='menu-4'><a href="#">Data</a></li>
+                </ul>
               </div>
+            </div>
 
              
               <div class='row'>
                 <!-- Summary Section -->
-                <div class='col-md-8'>
+                <div class='col-sm-12 col-md-8'>
                     <h1 class='project-header'>Summary: Latitude VS X</h1>
                     <hr>
                     <section class='main-text'>
@@ -48,18 +49,18 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis ornare vehicula. Sed at volutpat elit, et tristique orci. Maecenas nibh purus, venenatis sit amet accumsan id, volutpat eu ante. Curabitur eu sem eget turpis euismod interdum. Sed non mauris a urna pharetra congue id sagittis ex. Suspendisse malesuada erat fringilla odio tincidunt scelerisque. Fusce ut tempor leo.</p>
                         <p>Etiam consectetur tortor sodales diam cursus porta. Etiam ac vulputate felis, nec tempus turpis. Aliquam blandit porttitor massa. Suspendisse finibus orci ac tortor sagittis mattis. Sed posuere, tellus non maximus iaculis, lectus justo dapibus eros, eget faucibus quam urna eget justo. Sed accumsan erat nunc, at blandit diam finibus at. Etiam maximus venenatis sapien, vitae pharetra massa tincidunt nec. Phasellus arcu libero, dictum eu vehicula non, dapibus varius augue. Proin tortor libero, congue vel egestas eget, pharetra nec orci. Vivamus efficitur ultricies lorem in dictum. Aliquam vitae lorem ac augue aliquam aliquet.</p>
                     </section>
-                    </div>
+                </div>
                 
-                <div class='col-md-4'>
+                <div class='col-sm-12 col-md-4'>
                     <h2 class='visual-header'>Visualizations</h2>
                     <hr>
-                    <div class='img-g-1'>
-                        <img id='img-1' src='Resources/visualizations/Fig1.png' alt='Latitude VS Temp'>
-                        <img id='img-1' src='Resources/visualizations/Fig2.png' alt='Latitude VS Humititdy'>
-                    </div>
-                    <div class='img-g-2'>
-                        <img id='img-3' src='Resources/visualizations/Fig3.png' alt='Latitude VS Cloudiness'>
-                        <img id='img-4' src='Resources/visualizations/Fig4.png' alt='Latitude VS Wind Speed'>
+                    <div class='img-set'>
+                    
+                        <a href='#'><img class='img img-1' src='Resources/visualizations/Fig1.png' alt='Latitude VS Temp'></a>
+                        <a href='#'><img class='img img-2' src='Resources/visualizations/Fig2.png' alt='Latitude VS Humititdy'></a>
+          
+                        <a href='#'><img class='img img-3' src='Resources/visualizations/Fig3.png' alt='Latitude VS Cloudiness'></a>
+                        <a href='#'><img class='img img-4' src='Resources/visualizations/Fig4.png' alt='Latitude VS Wind Speed'></a>
                     </div>
                 </div>
               </div>
@@ -68,7 +69,7 @@
 
         </div>
 
-        <!-- make buttonsS work -->
+        <!-- make buttons work -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
