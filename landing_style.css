@@ -80,6 +80,11 @@ a:active {
     padding-top: 100%;
 }
 
+/* I got a helpful hint from this site https://stackoverflow.com/questions/23469332/highlight-images-on-hover-on-any-background */
+.img-set a:hover {
+    opacity: .5;;
+}
+
 .img {
     position: absolute;
     width: 50%;
@@ -120,6 +125,21 @@ a:active {
     width: 100%;
 }
 
+.comp-bucket {
+    background-color: #fff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom:20px;
+    margin-top:20px;
+    border-radius: 10px
+}
+
+.comp-bucket h4 {
+text-align: center;
+}
+
 
 /* -------------------------- */
 
@@ -132,6 +152,7 @@ a:active {
     padding-right: 25px;
     padding-top: 25px;
     margin-top: 20px;
+    margin-bottom:20px;
     border-radius: 10px;
 }
 
@@ -142,5 +163,26 @@ a:active {
     padding-right: 25px;
     padding-top: 25px;
     margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+/* ----------------------- */
+
+/* visualization styling */
+
+
+.vis-pic {
+    width:100%;
+}
+
+
+/* --------------------- */
+
+/* data styling */
+
+.table {
+    background-color: #fff;
     border-radius: 10px;
 }
