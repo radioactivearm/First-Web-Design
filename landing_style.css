@@ -69,7 +69,7 @@ a:active {
 
 #landing-pic {
     width: 300px;
-    height: 300px;
+    /* height: 300px; */
     float: left;
 }
 
