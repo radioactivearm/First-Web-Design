@@ -6,8 +6,11 @@ body p {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1, h2 {
+h1, h3 {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#990012;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #565051;
 }
 
 /*--------------------------------------*/
@@ -109,6 +112,7 @@ h1, h2 {
 
 .comp-bucket h4 {
 text-align: center;
+color: #800517;
 }
 
 
