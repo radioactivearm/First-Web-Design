@@ -1,99 +1,109 @@
 <!DOCTYPE html>
 <html lang='en-us'>
-    <head>
-        <meta charset='UTF-8'>
-        <title>Wind Speed</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="landing_style.css">
-    </head>
 
-    <body>
+<head>
+  <meta charset='UTF-8'>
+  <title>Wind Speed</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="landing_style.css">
+</head>
 
-        <div class='container'>
+<body>
 
-            <div class="navbar">
-                <div class="navbar-inner">
-                    <a class="brand" href="index.html">Latitude</a>
-                  <ul class="nav">
-                    
-                    <ul class="nav">
-                        <!-- <li id='menu-1'><a href="index.html">Home</a></li> -->
-                        <li id='menu-2' class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Plots
-                            <b class="caret"></b>
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a href="temperature.html">VS Temperature</a></li>
-                            <li><a href="humidity.html">VS Humidity</a></li>
-                            <li><a class="active" href="cloudiness.html">VS Cloudiness</a></li>
-                            <li><a href="wind_speed.html">VS Wind Speed</a></li>
-                          </ul>
-                        </li>
-                    </ul>
-                    
-                    <li id='menu-3'><a href='comparisons.html'>Comparison</a></li>
-                    <li id='menu-4'><a href="data.html">Data</a></li>
-                  </ul>
-                </div>
+  <div class='container'>
+
+    <!-- I got a lot of help figuring out the template for a navbar here https://getbootstrap.com/docs/4.0/components/navbar/  -->
+    <!-- navbar object  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <!-- brand link  -->
+      <a class="navbar-brand" href="index.html">Latitude</a>
+      <!-- toggler button  -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- part of navbar that collapses when shrunk  -->
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <!-- dropdown menu  -->
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">Plots</a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" class='active' href="wind_speed.html">Wind Speed</a>
             </div>
+          </li>
+          <!-- link  -->
+          <li class="nav-item">
+            <a class="nav-link" href="comparisons.html">Comparisons</a>
+          </li>
+          <!-- link  -->
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
 
-            <!-- <div class='row'>
-                <div class='col-md-12'>
-                    <h1>Latitude vs Wind Speed</h1>
-                </div>
-            </div>
-            <div class='row'>
-                <div class='col-md-12'>
-                    <section class='plot'>
-                        <img src='Resources/visualizations/Fig4.png' alt='Latitude vs Wind Speed'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sapien sodales, elementum nibh sed, condimentum libero. Aenean felis neque, mollis vitae bibendum eu, egestas sed neque. Curabitur nulla sem, tempus sed vulputate quis, maximus et magna. Aenean lobortis pellentesque ante ac feugiat. Vestibulum eget justo pharetra, congue augue sit amet, aliquet magna. Nunc ultricies purus suscipit, varius odio vel, efficitur nisi. Ut in lacus et tortor maximus commodo sit amet at nisi. Sed hendrerit suscipit ligula eget semper. Nunc ut nibh est.</p>
-                    </section>
-                </div>
-            </div> -->
-
-            <div class='row'>
-                <!-- Summary Section -->
-                <div class='col-sm-12 col-md-8'>
-                  <div class='sum-pocket'>
-                    <h1 class='project-header'>Latitude vs Wind Speed</h1>
-                    <hr>
-                    <section class='main-text'>
-                        <img class='vis-pic' src="Resources/visualizations/Fig4.png" alt='Latitude vs Wind Speed'>
-                        <!-- Remember to put in real text -->
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis ornare vehicula. Sed at volutpat elit, et tristique orci. Maecenas nibh purus, venenatis sit amet accumsan id, volutpat eu ante. Curabitur eu sem eget turpis euismod interdum. Sed non mauris a urna pharetra congue id sagittis ex. Suspendisse malesuada erat fringilla odio tincidunt scelerisque. Fusce ut tempor leo.</p>
-                    </section>
-                  </div>
-                </div>
-                
-                <div class='col-sm-12 col-md-4'>
-                  <div class='vis-pocket'>
-                    <h2 class='visual-header'>Visualizations</h2>
-                    <hr>
-                    <div class='img-set'>
-                    
-                        <a href='temperature.html'><img class='img img-1' src='Resources/visualizations/Fig1.png' alt='Latitude VS Temp'></a>
-                        <a href='humidity.html'><img class='img img-2' src='Resources/visualizations/Fig2.png' alt='Latitude VS Humititdy'></a>
-          
-                        <a href='cloudiness.html'><img class='img img-3' src='Resources/visualizations/Fig3.png' alt='Latitude VS Cloudiness'></a>
-                        <a href='wind_speed.html'><img class='img img-4' src='Resources/visualizations/Fig4.png' alt='Latitude VS Wind Speed'></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+    <div class='row'>
+      <!-- Summary Section -->
+      <div class='col-sm-12 col-md-8'>
+        <div class='sum-pocket'>
+          <h1 class='project-header'>Latitude vs Wind Speed</h1>
+          <hr>
+          <section class='main-text'>
+            <img class='vis-pic' src="Resources/visualizations/Fig4.png" alt='Latitude vs Wind Speed'>
+            <!-- Remember to put in real text -->
+            <p>This is a graph of Wind Speed and Latitude. There is little relationship between the two, but it is still
+              a very interesting graph. There might be a model there that isn’t linear, but I feel all of these could
+              possibly be modeled in a special way and you could find something.</p>
+          </section>
         </div>
+      </div>
+
+      <div class='col-sm-12 col-md-4'>
+        <div class='vis-pocket'>
+          <h2 class='visual-header'>Visualizations</h2>
+          <hr>
+          <div class='img-set'>
+
+            <a href='temperature.html'><img class='img img-1' src='Resources/visualizations/Fig1.png'
+                alt='Latitude VS Temp'></a>
+            <a href='humidity.html'><img class='img img-2' src='Resources/visualizations/Fig2.png'
+                alt='Latitude VS Humititdy'></a>
+
+            <a href='cloudiness.html'><img class='img img-3' src='Resources/visualizations/Fig3.png'
+                alt='Latitude VS Cloudiness'></a>
+            <a href='wind_speed.html'><img class='img img-4' src='Resources/visualizations/Fig4.png'
+                alt='Latitude VS Wind Speed'></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 
 
 
 
-        <!-- makes those buttons work -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
+  <!-- makes those buttons work -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
 
 
 </html>
