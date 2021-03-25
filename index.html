@@ -50,14 +50,13 @@
     </nav>
 
     <div class='row'>
-      <!-- Summary Section -->
+      <!-- I did the column breakdown this way to get it to work right on desktop but also look right on phones ie the md and lg instead of sm and md. -->
       <div class='col-md-12 col-lg-8'>
         <div class='sum-pocket'>
           <h1 class='project-header'>Summary: Latitude vs X</h1>
           <hr>
           <section class='main-text'>
             <img id='landing-pic' src="Resources/visualizations/Fig1.png" alt='Latitude VS Temp'>
-            <!-- Remember to put in real text -->
             <p>For this project we pulled weather data from over 500 randomly selected cities across the globe for the
               purpose of analyzing four different weather trends. I got the data from OpenWeatherMap’s Api, and worked
               with the data using the Pandas python library.</p>
@@ -69,7 +68,7 @@
         </div>
       </div>
 
-      <div class='col-md-12 col-lg-4'>
+      <!-- <div class='col-md-12 col-lg-4'>
         <div class='vis-pocket'>
           <h3 class='visual-header'>Visualizations</h3>
           <hr>
@@ -87,22 +86,49 @@
           </div>
         </div>
       </div>
+    </div> -->
+
+      <div class='col-md-12 col-lg-4'>
+        <div class='vis-pocket'>
+          <h3 class='visual-header'>Visualizations</h3>
+          <hr>
+          <div class='images'>
+            <div class='row'>
+              <div class='col-3 col-md-3 col-lg-6'>
+                <a href='temperature.html'><img class='image' src='Resources/visualizations/Fig1.png'
+                    alt='Latitude VS Temp'></a>
+              </div>
+              <div class='col-3 col-md-3 col-lg-6'>
+                <a href='humidity.html'><img class='image' src='Resources/visualizations/Fig2.png'
+                    alt='Latitude VS Humititdy'></a>
+              </div>
+              <div class='col-3 col-md-3 col-lg-6'>
+                <a href='cloudiness.html'><img class='image' src='Resources/visualizations/Fig3.png'
+                    alt='Latitude VS Cloudiness'></a>
+              </div>
+              <div class='col-3 col-md-3 col-lg-6'>
+                <a href='wind_speed.html'><img class='image' src='Resources/visualizations/Fig4.png'
+                    alt='Latitude VS Wind Speed'></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
     </div>
 
-
-
-  </div>
-
-  <!-- makes those buttons work -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    <!-- makes those buttons work -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
 </body>
 
 

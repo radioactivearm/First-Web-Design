@@ -16,8 +16,6 @@ h1, h3 {
 /*--------------------------------------*/
 /* Navigation Bar*/
 
-
-
 .navbar {
     background-color: #565051;
     border-radius: 10px;
@@ -55,17 +53,22 @@ h1, h3 {
 }
 
 /* I got a helpful hint from this site https://stackoverflow.com/questions/23469332/highlight-images-on-hover-on-any-background */
-.img-set a:hover {
-    opacity: .5;;
+/* a:hover {
+    opacity: .5;
+} */
+
+.image {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
 }
 
-.img {
-    position: absolute;
-    width: 50%;
-    height: 50%;
+.image:hover {
+    border: 2px solid #990012;
+    border-radius: 5px;
 }
 
-.img-1 {
+/* .img-1 {
     top:0;
     left:0;
 }
@@ -81,7 +84,7 @@ h1, h3 {
 .img-4 {
     bottom:0;
     right:0;
-}
+} */
 
 /* -------------------------- */
 
