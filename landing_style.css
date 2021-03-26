@@ -165,10 +165,14 @@ color: #800517;
 /* data styling */
 
 .table {
-    background-color: #fff;
     border-radius: 10px;  
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+#data {
+    color: #fff;
+    -webkit-text-stroke: none;
 }
 
 
